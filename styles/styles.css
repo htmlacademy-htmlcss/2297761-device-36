@@ -225,7 +225,12 @@ body {
   z-index: 10;
   display: flex;
 }
+.cart-open {
+  display: none;
+  background: #000000;
+  color: #ffffff;
 
+}
 .user-menu {
   display: flex;
   flex-direction: row;
@@ -577,6 +582,7 @@ body {
   height: 60px;
   width: 20px;
   transform: rotate(180deg);
+  z-index: 10;
 }
 
 .slider-next {
@@ -1103,6 +1109,7 @@ body {
   margin: 0 auto;
   width: 1160px;
   justify-content: space-between;
+  margin-bottom: 48px;
 
 }
 
@@ -1155,7 +1162,9 @@ body {
   margin-left: 22px;
   margin-bottom: 30px;
 }
-
+.information-link {
+  padding-left: 23px;
+}
 .information-item::marker {
   font-size: 1.4em;
   color: #ffc700;
@@ -1410,12 +1419,14 @@ body {
   box-sizing: border-box;
 
 }
+
 .footer-adresse-wrapper {
   position: relative;
   padding: 0;
   margin: 0;
-  margin-right: 40px;
+  margin-right: 79px;
 }
+
 .footer-catalog-center {
   min-width: 319px;
   margin-right: 178px;
@@ -1484,6 +1495,7 @@ body {
   min-width: 150px;
   display: flex;
 }
+
 .footer-adresse-wrapper::before {
   content: "";
   position: absolute;
@@ -1492,6 +1504,7 @@ body {
   background: #ffc700;
   bottom: -54px;
 }
+
 .footer-social-list {
   display: flex;
   margin: 0;
@@ -1586,6 +1599,7 @@ body {
   margin-bottom: 11px;
   position: relative;
 }
+
 .main-container-title::after {
   width: 1160px;
   height: 20px;
@@ -1595,6 +1609,7 @@ body {
   left: 0;
   content: "";
 }
+
 .breadcrumbs-item {
 
   padding: 0;
@@ -1627,7 +1642,7 @@ body {
 
 .catalog-filter {
   width: 320px;
-  padding: 60px 0 60px 0;
+  padding: 29px 0 60px 0;
 
 }
 
@@ -1653,9 +1668,11 @@ body {
   align-items: center;
   padding-right: 199px;
 }
+
 .catalog-title-left {
   padding-right: 206px;
 }
+
 .select-control {
   outline: none;
   border: transparent;
@@ -1674,7 +1691,8 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
+  margin-top: -7px;
 }
 
 .catalog-filter-title {
@@ -1685,7 +1703,7 @@ body {
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding: 0;
   position: relative;
 }
@@ -1699,11 +1717,111 @@ body {
   left: 0;
   content: "";
 }
+.price {
+  margin-bottom: 70px;
+}
+.range-block {
+  width: 200px;
+  height: 20px;
+  position: relative;
+  margin-bottom: 1px;
+}
 
+.scale {
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  border-top: 2px solid #dcdcdc;
+  top: 9px;
+  left: 0;
+}
+
+.range {
+  position: absolute;
+  width: 119px;
+  height: 1px;
+  border-top: 2px solid #000000;
+  top: -2px;
+  left: 0;
+}
+
+.range-handle {
+  background: #ebebeb;
+  border: 2px solid #000000;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  display: block;
+}
+
+.range-handle-min {
+  left: -9px;
+}
+
+.range-handle-max {
+  left: 109px;
+}
+.range-input-wrapper {
+  display: flex;
+  position: absolute;
+  right: 325px;
+
+}
+.range-input-min {
+  border: none;
+  width: 75px;
+  color: #000000;
+  opacity: 0.3;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  margin-right: 29px;
+ }
+
+.range-input-max {
+  border: none;
+  width: 75px;
+  color: #000000;
+  opacity: 0.3;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+}
+
+.range-value {
+  border: none;
+  width: 55px;
+  background-color: #f0f0f0;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.range-label {
+  padding-right: 2px;
+}
+.radio-list {
+  margin-bottom: -12px;
+}
 .catalog-filter-item {
   margin-bottom: 7px;
 }
-
+.radio-item {
+  margin-bottom: 10px;
+}
 .checkbox-label {
   display: inline-block;
   padding-left: 37px;
@@ -1814,7 +1932,7 @@ body {
 .catolog-image {
   width: 360px;
   height: 380px;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
 }
 
 .catalog-description {
@@ -1936,9 +2054,11 @@ body {
   color: #444444;
   opacity: 0.6;
 }
+
 .button-slider-submit {
   border: none;
 }
+
 .menu-link-cart {
   text-decoration: none;
 }

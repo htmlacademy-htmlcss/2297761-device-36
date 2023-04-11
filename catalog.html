@@ -19,7 +19,8 @@
           <div class="user-menu">
             <form class="menu-form-search search" action="https://echo.htmlacademy.ru/">
               <label class="search-type-label" for="search-name">
-                <input class="search-type search-icon" type="search" name="q" placeholder="Поиск по сайту" id="search-name" required>
+                <input class="search-type search-icon" type="search" name="q" placeholder="Поиск по сайту"
+                  id="search-name" required>
               </label>
               <label class="search-type-label" for="search-answer">
                 <input class="search-submit" type="search" value="Найти" id="search-answer" required>
@@ -133,44 +134,65 @@
             <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form">
               <div class="price">
                 <h3 class="catalog-filter-title">Стоимость</h3>
+                <div class="range-block">
+                  <div class="scale">
+                    <div class="range"></div>
+                  </div>
+                  <button class="range-handle range-handle-min">
+                    <span class="visually-hidden"> Установить минимальное значение цены</span>
+                  </button>
+                  <button class="range-handle range-handle-max">
+                    <span class="visually-hidden"> Установить максимальное значение цены</span>
+                  </button>
+                </div>
+                <div class="range-input-wrapper">
+                  <div class="range-input-min">
+                    <label for="" class="range-label">от</label>
+                    <input type="text" class="range-value" value="0">
+                  </div>
+                  <div class="range-input-max">
+                    <label for="" class="range-label">до</label>
+                    <input type="text" class="range-value" value="5000">
+                  </div>
+                </div>
               </div>
-                <legend class="catalog-filter-title">Цвет</legend>
-                <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <input class="checkbox-input visually-hidden" type="checkbox" name="black" id="black" checked>
-                    <label class="checkbox-label" for="black">Черный</label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <input class="checkbox-input visually-hidden" type="checkbox" name="white" id="white" checked>
-                    <label class="checkbox-label" for="white">Белый</label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <input class="checkbox-input visually-hidden" type="checkbox" name="blue" id="blue">
-                    <label class="checkbox-label" for="blue">Синий</label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <input class="checkbox-input visually-hidden" type="checkbox" name="red" id="red">
-                    <label class="checkbox-label" for="red">Красный</label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <input class="checkbox-input visually-hidden" type="checkbox" name="pink" id="pink">
-                    <label class="checkbox-label" for="pink">Розовый</label>
-                  </li>
-                </ul>
-                <legend class="catalog-filter-title">Bluetooth</legend>
-                <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <input class="radio-input visually-hidden" type="radio" name="yes" value="yes" id="yes" checked>
-                    <label class="radio-label" for="yes">Есть</label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <input class="radio-input visually-hidden" type="radio" name="no" value="no" id="no">
-                    <label class="radio-label" for="no">Нет</label>
-                  </li>
-                </ul>
-                <button class="button button-slider button-slider-submit" type="submit">
-                  <span class="button-text">Показать</span>
-                </button>
+              <legend class="catalog-filter-title">Цвет</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <input class="checkbox-input visually-hidden" type="checkbox" name="black" id="black" checked>
+                  <label class="checkbox-label" for="black">Черный</label>
+                </li>
+                <li class="catalog-filter-item">
+                  <input class="checkbox-input visually-hidden" type="checkbox" name="white" id="white" checked>
+                  <label class="checkbox-label" for="white">Белый</label>
+                </li>
+                <li class="catalog-filter-item">
+                  <input class="checkbox-input visually-hidden" type="checkbox" name="blue" id="blue">
+                  <label class="checkbox-label" for="blue">Синий</label>
+                </li>
+                <li class="catalog-filter-item">
+                  <input class="checkbox-input visually-hidden" type="checkbox" name="red" id="red">
+                  <label class="checkbox-label" for="red">Красный</label>
+                </li>
+                <li class="catalog-filter-item">
+                  <input class="checkbox-input visually-hidden" type="checkbox" name="pink" id="pink">
+                  <label class="checkbox-label" for="pink">Розовый</label>
+                </li>
+              </ul>
+              <legend class="catalog-filter-title">Bluetooth</legend>
+              <ul class="catalog-filter-list radio-list">
+                <li class="catalog-filter-item radio-item">
+                  <input class="radio-input visually-hidden" type="radio" name="yes" value="yes" id="yes" checked>
+                  <label class="radio-label" for="yes">Есть</label>
+                </li>
+                <li class="catalog-filter-item radio-item">
+                  <input class="radio-input visually-hidden" type="radio" name="yes" value="no" id="no">
+                  <label class="radio-label" for="no">Нет</label>
+                </li>
+              </ul>
+              <button class="button button-slider button-slider-submit" type="submit">
+                <span class="button-text">Показать</span>
+              </button>
             </form>
           </div>
           <div class="catalog-wrapper">
@@ -178,7 +200,8 @@
             <ul class="catalog-list">
               <li class="catalog-item">
                 <a href="#" class="catolog-link">
-                  <img src="./images/catalog/selfysteack.jpg" alt="Селфи-палка." class="catolog-image" width="360" height="380">
+                  <img src="./images/catalog/selfysteack.jpg" alt="Селфи-палка." class="catolog-image" width="360"
+                    height="380">
                   <div class="catalog-description">
                     <h3 class="catalog-item-title">Любительская <br>
                       селфи-палка
@@ -194,7 +217,8 @@
               </li>
               <li class="catalog-item">
                 <a href="#" class="catolog-link">
-                  <img src="./images/catalog/selfyprof.jpg" alt="Селфи-палка профессиональная" class="catolog-image" width="360" height="380">
+                  <img src="./images/catalog/selfyprof.jpg" alt="Селфи-палка профессиональная" class="catolog-image"
+                    width="360" height="380">
                   <div class="catalog-description">
                     <h3 class="catalog-item-title">Профессиональная <br> селфи-палка</h3>
                     <b class="catolog-price">1 500 ₽</b>
@@ -208,7 +232,8 @@
               </li>
               <li class="catalog-item">
                 <a href="#" class="catolog-link">
-                  <img src="./images/catalog/selfywater.jpg" alt="Селфи-палка водонепроницаемая" class="catolog-image" width="360" height="380">
+                  <img src="./images/catalog/selfywater.jpg" alt="Селфи-палка водонепроницаемая" class="catolog-image"
+                    width="360" height="380">
                   <div class="catalog-description">
                     <h3 class="catalog-item-title">Непотопляемая <br>
                       селфи-палка</h3>
@@ -223,7 +248,8 @@
               </li>
               <li class="catalog-item">
                 <a href="#" class="catolog-link">
-                  <img src="./images/catalog/selfyhand.jpg" alt="Селфи-палка с имитацией руки" class="catolog-image" width="360" height="380">
+                  <img src="./images/catalog/selfyhand.jpg" alt="Селфи-палка с имитацией руки" class="catolog-image"
+                    width="360" height="380">
                   <div class="catalog-description">
                     <h3 class="catalog-item-title">Селфи-палка «Следуй <br> за мной»</h3>
                     <b class="catolog-price">1 500 ₽</b>
@@ -264,12 +290,12 @@
     </main>
     <footer class="page-footer">
       <div class="footer-container">
-
         <a class="footer-link" href="index.html">
-          <img class="header-logo" src="./images/logo-yellow.svg" alt="Логотип магазина Девайс." width="145" height="36">
+          <img class="header-logo" src="./images/logo-yellow.svg" alt="Логотип магазина Девайс." width="145"
+            height="36">
         </a>
         <div class="footer-center">
-          <div class="footer-adresse">
+          <div class="footer-adresse-wrapper">
             <p class="footer-adresse">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
           </div>
           <div class="footer-catalog-center">
@@ -286,7 +312,7 @@
             </ul>
           </div>
           <div class="footer-phone-wrap">
-            <a class="footer-phone-link" href="tel:+78128121212">Тел.:+7 (812) 812-12-12
+            <a class="footer-phone-link" href="tel:+78128121212">Тел.:+7(812) 812-12-12
             </a>
           </div>
         </div>
@@ -319,7 +345,7 @@
           </section>
         </div>
       </div>
-      </footer>
+    </footer>
   </body>
 
 </html>
