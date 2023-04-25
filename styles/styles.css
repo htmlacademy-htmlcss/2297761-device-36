@@ -281,15 +281,19 @@ body {
   color: #ffffff;
   display: flex;
 }
+
 .cart-link:hover {
   opacity: 0.6;
 }
+
 .cart-link:active {
   opacity: 0.3;
 }
+
 .cart-link:focus {
   border: 1px dashed #7b61ff;
 }
+
 .cart-link-wrapper {
   display: flex;
 }
@@ -315,25 +319,32 @@ body {
   border: none;
   cursor: pointer;
 }
+
 .cart-close-button:hover {
   opacity: 0.6;
 }
+
 .cart-close-button:hover {
   opacity: 0.3;
 }
+
 .cart-close-button:focus {
   border: 2px solid #af4fff;
 }
+
 .cart-open-butten:hover {
   background: #ffe17f;
 }
+
 .cart-open-butten:active {
   background: #ffe17f;
   opacity: 0.3;
 }
+
 .cart-open-butten:focus {
   border: 2px solid #af4fff;
 }
+
 .cart-information {
   margin-bottom: 30px;
   margin-top: 23px;
@@ -518,12 +529,10 @@ body {
 .navigation-catalog-title:hover::after {
   opacity: 1;
   background-image: url("../images/minus.svg");
-
 }
 
 .navigation-catalog-title:focus {
   outline: 2px solid #af4fff;
-  ;
 }
 
 .navigation-catalog-title:focus::after {
@@ -1155,7 +1164,6 @@ body {
 
 .delivery-slider-item {
   display: none;
-  /* padding: 162px 41px 24px 76px; */
   padding: 55px 41px 0 76px;
   position: relative;
   width: 600px;
@@ -1584,6 +1592,19 @@ body {
   display: inline-block;
   margin-top: 64px;
   margin-bottom: 10px;
+  width: 145px;
+}
+
+.footer-link:focus {
+  outline: 2px solid #af4fff;
+}
+
+.footer-link:hover {
+  opacity: 0.6;
+}
+
+.footer-link:active {
+  opacity: 0.3;
 }
 
 .footer-center {
@@ -1634,9 +1655,7 @@ body {
 .footer-catalog-item:not(:last-child) {
   margin-right: 32px;
 }
-.social-item-telegram:hover {
-  background: #ffc700;
-}
+
 .footer-catalog-link {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -1649,10 +1668,25 @@ body {
   text-decoration: none;
 }
 
+.footer-catalog-link:hover {
+  color: #ffc700;
+  border-bottom: 2px solid #ffc700;
+}
+
+.footer-catalog-link:active {
+  color: #ffc700;
+  border-bottom: 2px solid #ffc700;
+  opacity: 0.3;
+}
+
+.footer-catalog-link:focus {
+  outline: 2px solid #af4fff;
+}
+
 .footer-phone-wrap {
   min-width: 174px;
   min-height: 20px;
-  display: flex;
+  display: inline-block;
   text-decoration-line: none
 }
 
@@ -1667,7 +1701,22 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding-top: 22px;
+  margin-top: 22px;
+}
+
+.footer-phone-link:hover {
+  color: #ffc700;
+  text-decoration-line: underline #ffc700;
+}
+
+.footer-phone-link:active {
+  color: #ffc700;
+  text-decoration-line: underline #ffc700;
+  opacity: 0.3;
+}
+
+.footer-phone-link:focus {
+  outline: 2px solid #af4fff;
 }
 
 .footer-bottom {
@@ -1715,6 +1764,28 @@ body {
   border-radius: 50%;
 }
 
+.social-item {
+  cursor: pointer;
+}
+
+.social-item:hover {
+  background-color: #ffc700;
+}
+
+.social-item:active {
+  background-color: #ffc700;
+  opacity: 0.3;
+}
+
+.social-item:focus {
+  outline: none
+}
+
+.social-item:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .social-item-telegram {
   display: flex;
   flex-direction: column;
@@ -1751,7 +1822,6 @@ body {
   margin: 0;
   width: 115px;
   height: 33px;
-
 }
 
 .main-container-header {
@@ -1796,9 +1866,22 @@ body {
 }
 
 .breadcrumbs-item {
-
+  display: inline-block;
   padding: 0;
   margin: 0;
+  position: relative;
+}
+
+.breadcrumbs-item:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  outline: 2px solid #af4fff;
 }
 
 .breadcrumbs-link {
@@ -1810,11 +1893,23 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+
+}
+
+.breadcrumbs-item:not(:last-child):after {
+  content: "";
+  margin-left: 16px;
+  width: 4px;
+  height: 7px;
+  background-image: url("../images/catalog/breadcrambs-arrow.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 11px;
+  opacity: 0.3;
 }
 
 .catalog-container {
   background-color: #f0f0f0;
-
 }
 
 .catalog-frame {
@@ -1872,15 +1967,19 @@ body {
   margin-top: 15px;
   position: relative;
 }
+
 .select-control:hover {
   opacity: 0.6;
 }
+
 .select-control:active {
   opacity: 0.3;
 }
+
 .select-control:focus {
   border: 2px solid #af4fff;
 }
+
 .catalog-filter-list {
   list-style-type: none;
   margin: 0;
@@ -1922,6 +2021,18 @@ body {
   top: 413px;
 }
 
+.page-prev:hover {
+  opacity: 0.5;
+}
+
+.page-prev:active {
+  opacity: 1;
+}
+
+.page-prev:focus {
+  outline: 2px solid #af4fff;
+}
+
 .page-next {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
@@ -1930,6 +2041,18 @@ body {
   right: 625px;
   top: 413px;
   position: absolute;
+}
+
+.page-next:hover {
+  opacity: 0.5;
+}
+
+.page-next:active {
+  opacity: 1;
+}
+
+.page-next:focus {
+  outline: 2px solid #af4fff;
 }
 
 .price {
@@ -1984,7 +2107,7 @@ body {
 .range-input-wrapper {
   display: flex;
   position: absolute;
-  left: 27%;
+  left: 238px;
 }
 
 .range-input-min {
@@ -2000,6 +2123,10 @@ body {
   text-align: center;
   display: flex;
   margin-right: 29px;
+}
+
+.range-input-min:focus {
+  border: 2px solid #af4fff;
 }
 
 .range-input-max {
@@ -2027,6 +2154,10 @@ body {
   line-height: 20px;
 }
 
+.range-value:focus {
+  outline: none;
+}
+
 .range-label {
   padding-right: 2px;
 }
@@ -2051,9 +2182,11 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
+
 .checkbox-label:hover {
   opacity: 0.6;
 }
+
 .checkbox-label:active {
   opacity: 0.3;
 }
@@ -2097,12 +2230,15 @@ body {
   padding-left: 37px;
   position: relative;
 }
+
 .radio-label:hover {
   opacity: 0.6;
 }
+
 .radio-label:active {
   opacity: 0.3;
 }
+
 .radio-label::before {
   position: absolute;
   content: "";
@@ -2202,6 +2338,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .button-item-catalog {
   position: absolute;
   top: 172px;
@@ -2275,6 +2412,7 @@ body {
   content: "";
 
 }
+
 .catalog-sorting-more {
   display: flex;
   width: 760px;
@@ -2291,6 +2429,19 @@ body {
   text-decoration-line: none;
   justify-content: center;
   margin-bottom: 44px;
+}
+
+.catalog-sorting-more:hover {
+  border: 3px solid #000000;
+}
+
+.catalog-sorting-more:active {
+  opacity: 0.3;
+}
+
+.catalog-sorting-more:focus {
+  outline: 2px solid #af4fff;
+
 }
 
 .pagination {
@@ -2321,6 +2472,25 @@ body {
   padding: 25px;
 }
 
+.button-back:hover {
+  background: #dcdcdc;
+  color: #000000;
+  opacity: 1;
+}
+
+.button-back:active {
+  background: #dcdcdc;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.button-back:focus {
+  background: #f0f0f0;
+  color: #000000;
+  outline: 2px solid #af4fff;
+  opacity: 1;
+}
+
 .button-next {
   text-decoration: none;
   font-weight: 800;
@@ -2335,6 +2505,25 @@ body {
   padding: 25px;
 }
 
+.button-next:hover {
+  background: #dcdcdc;
+  color: #000000;
+  opacity: 1;
+}
+
+.button-next:active {
+  background: #dcdcdc;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.button-next:focus {
+  background: #f0f0f0;
+  color: #000000;
+  outline: 2px solid #af4fff;
+  opacity: 1;
+}
+
 .pagination-list {
   margin: 0;
   padding: 0;
@@ -2345,10 +2534,30 @@ body {
 
 .pagination-item {
   min-width: 40px;
+  min-height: 40px;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.pagination-current:hover {
+  opacity: 1;
+}
+
+.pagination-current:active {
+  opacity: 0.1;
+}
+
+.pagination-current:focus {
+  outline: none;
+}
+
+.pagination-item:focus-within {
+  opacity: 0.3;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .pagination-current {
@@ -2378,7 +2587,7 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  display: block;
 }
 
 .modal-delivery {
@@ -2408,6 +2617,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-close-button:focus {
+  outline: 2px solid #af4fff;
 }
 
 .modal-title {
@@ -2501,10 +2722,20 @@ body {
   width: 540px;
   height: 60px;
 }
-
+.modal-button-container {
+  display: none;
+  background: #000000;
+  color: #ffffff;
+  width: 200px;
+  min-height: 166px;
+}
 .modal-button-information {
   width: 180px;
   position: relative;
+}
+
+.modal-button-information:hover .modal-button-container {
+  display: block;
 }
 
 .modal-button-information::after {
@@ -2524,11 +2755,12 @@ body {
 }
 
 .button-information-description {
-  display: none;
-  background: #000000;
-  color: #ffffff;
-  width: 200px;
-  min-height: 166px;
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .modal-button-quantity {
