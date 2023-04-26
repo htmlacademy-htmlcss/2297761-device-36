@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="icon" href="favicon-device.png" type="image/png">
+    <link rel="icon" href="favicon.ico" type="image/png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <header class="page-header">
       <nav class="header-menu">
@@ -21,25 +19,20 @@
               <input class="search-type search-icon" type="search" name="q" placeholder="Текст поиска" id="search-name"
                 required>
             </label>
-            <label class="search-type-label" for="search-answer">
-              <input class="search-submit" type="search" value="Найти" id="search-answer" required>
-            </label>
+            <div class="button-block">
+              <button class="search-submit">Найти</button>
+            </div>
           </form>
           <div class="menu-login">
-            <a class="menu-link login-link" href="#">
-              Коля Петухов
-            </a>
+            <a class="menu-link login-link" href="#">Коля Петухов</a>
             <a class="menu-link login-out" href="#">Выйти</a>
           </div>
           <ul class="user-menu-list">
             <li class="user-menu-item">
-              <a class="menu-link menu-link-compare" href="#">
-                Сравнить
-              </a>
+              <a class="menu-link menu-link-compare" href="#">Сравнить</a>
             </li>
             <li class="user-menu-item">
-              <a class="menu-link menu-link-cart" href="#">
-                Корзина
+              <a class="menu-link menu-link-cart" href="#">Корзина
                 <span class="cart-amount">2</span>
               </a>
               <div class="cart-open">
@@ -137,19 +130,13 @@
     </header>
     <main class="main-container">
       <div class="main-container-header">
-        <h1 class="main-container-title">
-          Моноподы для селфи
-        </h1>
+        <h1 class="main-container-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              Главная
-            </a>
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="catalog.html">
-              Каталог товаров
-            </a>
+            <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
@@ -164,12 +151,14 @@
           <select class="select-control" aria-label="Сортировка">
             <option value="cheep">Популярные</option>
           </select>
-          <a href="#" class="page-prev">
-            <span class="visually-hidden">Показать предыдущую страницу каталога</span>
-          </a>
-          <a href="#" class="page-next">
-            <span class="visually-hidden">Показать следующую страницу каталога</span>
-          </a>
+          <div class="view-wrapper">
+            <a href="#" class="page-prev">
+              <span class="visually-hidden">Показать предыдущую страницу каталога</span>
+            </a>
+            <a href="#" class="page-next">
+              <span class="visually-hidden">Показать следующую страницу каталога</span>
+            </a>
+          </div>
         </div>
         <div class="catalog-frame">
           <div class="catalog-filter">
@@ -188,11 +177,11 @@
                   </button>
                 </div>
                 <div class="range-input-wrapper">
-                  <div class="range-input-min" tabindex="0">
+                  <div class="range-value-container" tabindex="0">
                     <span class="range-label">от</span>
                     <input type="text" class="range-value" value="0">
                   </div>
-                  <div class="range-input-max">
+                  <div class="range-value-container">
                     <span class="range-label">до</span>
                     <input type="text" class="range-value" value="5000">
                   </div>
@@ -242,7 +231,6 @@
             </form>
           </div>
           <div class="catalog-wrapper">
-
             <ul class="catalog-list">
               <li class="catalog-item">
                 <a href="#" class="catalog-link">
@@ -255,9 +243,7 @@
                     </div>
                   </div>
                   <div class="catalog-description">
-                    <h3 class="catalog-item-title">Любительская <br>
-                      селфи-палка
-                    </h3>
+                    <h3 class="catalog-item-title">Любительская <br>селфи-палка</h3>
                     <b class="catalog-price">500 ₽</b>
                   </div>
                 </a>
@@ -265,7 +251,7 @@
               <li class="catalog-item catalog-item-new">
                 <a href="#" class="catalog-link">
                   <div class="catalog-image">
-                    <img src="./images/catalog/selfyprof.jpg" alt="Селфи-палка профессиональная" class="catalog-image"
+                    <img src="./images/catalog/selfyprof.jpg" alt="Селфи-палка профессиональная." class="catalog-image"
                     width="360" height="380">
                     <div class="button-item-catalog">
                       <div class="catalog-item-details">
@@ -282,7 +268,7 @@
               <li class="catalog-item">
                 <a href="#" class="catalog-link">
                   <div class="catalog-image">
-                    <img src="./images/catalog/selfywater.jpg" alt="Селфи-палка водонепроницаемая" class="catalog-image"
+                    <img src="./images/catalog/selfywater.jpg" alt="Селфи-палка водонепроницаемая." class="catalog-image"
                     width="360" height="380">
                     <div class="button-item-catalog">
                       <div class="catalog-item-details">
@@ -291,8 +277,7 @@
                     </div>
                   </div>
                   <div class="catalog-description">
-                    <h3 class="catalog-item-title">Непотопляемая <br>
-                      селфи-палка</h3>
+                    <h3 class="catalog-item-title">Непотопляемая <br>селфи-палка</h3>
                     <b class="catalog-price">2 500 ₽</b>
                   </div>
                 </a>
@@ -300,7 +285,7 @@
               <li class="catalog-item">
                 <a href="#" class="catalog-link">
                   <div class="catalog-image">
-                    <img src="./images/catalog/selfyhand.jpg" alt="Селфи-палка с имитацией руки" class="catalog-image"
+                    <img src="./images/catalog/selfyhand.jpg" alt="Селфи-палка с имитацией руки." class="catalog-image"
                     width="360" height="380">
                     <div class="button-item-catalog">
                       <div class="catalog-item-details">
@@ -315,7 +300,9 @@
                 </a>
               </li>
             </ul>
-            <a class="catalog-sorting-more" href="#">Загрузить ещё</a>
+            <div class="catalog-sorting-more">
+              <a class="sorting-more" href="#">Загрузить ещё</a>
+            </div>
             <div class="pagination">
               <a class="button-back" href="#">Назад</a>
               <ul class="pagination-list">
@@ -365,8 +352,7 @@
             </ul>
           </div>
           <div class="footer-phone-wrap">
-            <a class="footer-phone-link" href="tel:+78128121212">Тел.:+7(812) 812-12-12
-            </a>
+            <a class="footer-phone-link" href="tel:+78128121212">Тел.:+7(812) 812-12-12</a>
           </div>
         </div>
         <div class="footer-bottom">
@@ -401,5 +387,4 @@
       </div>
     </footer>
   </body>
-
 </html>
