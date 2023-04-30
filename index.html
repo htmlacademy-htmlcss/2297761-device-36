@@ -30,49 +30,51 @@
             <li class="user-menu-item">
               <a class="menu-link menu-link-compare" href="#">Сравнить</a>
             </li>
-            <li class="user-menu-item">
+            <li class="user-menu-item item-with-popover">
               <a class="menu-link menu-link-cart" href="#">Корзина
                 <span class="cart-amount">2</span>
               </a>
               <div class="cart-open">
-                <ul class="cart-open-list">
-                  <li class="cart-item">
-                    <div class="cart-link-wrapper">
-                      <a href="#" class="cart-link">
-                        <img src="./images/catalog/selfysteack.jpg" alt="Селфи-палка." width="39" height="43">
-                        <p class="cart-item-description">Любительская <br> селфи-палка</p>
-                      </a>
-                      <button class="cart-close-button">
-                        <span class="visually-hidden">Закрыть</span>
-                      </button>
-                    </div>
-                  </li>
-                  <li class="cart-item">
-                    <div class="cart-link-wrapper">
-                      <a href="#" class="cart-link">
-                        <img src="./images/catalog/selfyprof.jpg" alt="Профессиональная селфи-палка." width="39"
-                          height="43">
-                        <p class="cart-item-description">Профессиональная <br> селфи-палка</p>
-                      </a>
-                      <button class="cart-close-button">
-                        <span class="visually-hidden">Закрыть</span>
-                      </button>
-                    </div>
-                  </li>
-                </ul>
-                <div class="cart-information">
-                  <ul class="cart-information-list">
-                    <li class="cart-information-item">
-                      <span class="cart-goods">Товаров:</span>
-                      <b class="cart-goods-sum">2</b>
+                <div class="cart-open-wrapper">
+                  <ul class="cart-open-list">
+                    <li class="cart-item">
+                      <div class="cart-link-wrapper">
+                        <a href="#" class="cart-link">
+                          <img src="./images/catalog/selfysteack.jpg" alt="Селфи-палка." width="39" height="43">
+                          <p class="cart-item-description">Любительская <br> селфи-палка</p>
+                        </a>
+                        <button class="cart-close-button">
+                          <span class="visually-hidden">Закрыть</span>
+                        </button>
+                      </div>
                     </li>
-                    <li class="cart-information-item">
-                      <span class="cart-sum">Сумма:</span>
-                      <b class="cart-goods-sum">2000 ₽</b>
+                    <li class="cart-item">
+                      <div class="cart-link-wrapper">
+                        <a href="#" class="cart-link">
+                          <img src="./images/catalog/selfyprof.jpg" alt="Профессиональная селфи-палка." width="39"
+                            height="43">
+                          <p class="cart-item-description">Профессиональная <br> селфи-палка</p>
+                        </a>
+                        <button class="cart-close-button">
+                          <span class="visually-hidden">Закрыть</span>
+                        </button>
+                      </div>
                     </li>
                   </ul>
+                  <div class="cart-information">
+                    <ul class="cart-information-list">
+                      <li class="cart-information-item">
+                        <span class="cart-goods">Товаров:</span>
+                        <b class="cart-goods-sum">2</b>
+                      </li>
+                      <li class="cart-information-item">
+                        <span class="cart-sum">Сумма:</span>
+                        <b class="cart-goods-sum">2000 ₽</b>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="cart-open-butten">Открыть корзину</button>
                 </div>
-                <button class="cart-open-butten">Открыть корзину</button>
               </div>
             </li>
           </ul>
@@ -477,9 +479,9 @@
               <div class="modal-button-container">
                 <span class="button-information-description">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br> к провозу багажа.</span>
               </div>
-              <div class="modal-button-quantity">
+              <div class="modal-button-quantity error">
                 <button class="button-minus-plus button-minus" type="button">-</button>
-                <input class="input-quantity" type="number" min="1" max="100" value="1"required>
+                <input class="input-quantity" type="number" min="1" max="100" value="1" required>
                 <button class="button-minus-plus button-plus" type="button">+</button>
               </div>
             </div>
