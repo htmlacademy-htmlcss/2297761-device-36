@@ -353,6 +353,9 @@ body {
   outline: 2px solid #af4fff;
 }
 
+.cart-open-butten:disabled {
+  opacity: 0.3;
+}
 .cart-information {
   margin-bottom: 30px;
   margin-top: 23px;
@@ -448,6 +451,10 @@ body {
   outline: none;
 }
 
+.search-type:disabled {
+  opacity: 0.3;
+}
+
 .search-submit {
   display: inline-block;
   font-family: inherit;
@@ -462,6 +469,10 @@ body {
   cursor: pointer;
   height: 40px;
   min-width: 160px;
+}
+
+.search-submit:disabled {
+  opacity: 0.3;
 }
 
 .button-block:focus-within {
@@ -748,6 +759,9 @@ body {
   outline-offset: 2px;
 }
 
+.slider-control:disabled {
+  opacity: 0.1;
+}
 .slider-prev {
   position: absolute;
   top: 206px;
@@ -849,6 +863,9 @@ body {
   background-color: #ffcc33;
 }
 
+.button:disabled::after {
+  opacity: 0.3;
+}
 .button-slider:focus {
   outline: 2px solid #af4fff;
 }
@@ -1524,6 +1541,9 @@ body {
   border-color: red;
 }
 
+.notification-input:disabled {
+  opacity: 0.3;
+}
 .submit-description {
   min-height: 55px;
   width: 253px;
@@ -1560,6 +1580,9 @@ body {
   outline-offset: 2px;
 }
 
+.submit-description:disabled {
+  opacity: 0.3;
+}
 .notification-comment {
   align-self: center;
   position: relative;
@@ -1643,7 +1666,7 @@ body {
 
 .footer-catalog-list {
   list-style: none;
-  display: flex;
+  display: grid;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1652,7 +1675,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #FFFFFF;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
   padding-top: 18px;
@@ -1985,6 +2008,9 @@ body {
   border: 2px solid #af4fff;
 }
 
+.select-control:disabled {
+  opacity: 0.1;
+}
 .catalog-filter-list {
   list-style-type: none;
   margin: 0;
@@ -2259,7 +2285,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 .checkbox-label {
   display: inline-block;
   padding-left: 37px;
@@ -2277,6 +2302,9 @@ body {
   opacity: 0.3;
 }
 
+.checkbox-label:disabled {
+  opacity: 0.1;
+}
 .checkbox-label::before {
   content: "";
   position: absolute;
@@ -2326,6 +2354,10 @@ body {
 
 .radio-label:active {
   opacity: 0.3;
+}
+
+.radio-label:disabled {
+  opacity: 0.1;
 }
 
 .radio-label::before {
@@ -2537,6 +2569,10 @@ body {
 
 .catalog-sorting-more:focus-within {
   outline: 2px solid #af4fff;
+}
+
+.catalog-sorting-more:disabled {
+ opacity: 0.3;
 }
 
 .sorting-more:focus {
@@ -2790,6 +2826,11 @@ body {
   outline: 2px solid #af4fff;
 }
 
+.modal-input:disabled {
+  background: #f0f0f0;
+  opacity: 0.3;
+}
+
 .email:invalid {
   color: #ff3d3d;
   border: 1px solid #ff3d3d;
@@ -2891,7 +2932,7 @@ body {
   width: 200px;
   position: absolute;
   margin-top: 11px;
-  z-index: 1;
+  z-index: 2;
   padding: 19px 17px;
   background-color: #000000;
   box-shadow: 0 10px 0 #0000001a;
@@ -2937,8 +2978,13 @@ body {
 }
 
 .button-minus-plus:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   z-index: 2;
+}
+
+.button-minus-plus:disabled {
+  background: #f0f0f0;
+  opacity: 0.3;
 }
 
 .button-minus {
@@ -2948,7 +2994,7 @@ body {
   cursor: pointer;
   position: absolute;
   left: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 .button-plus {
@@ -2964,6 +3010,10 @@ body {
   outline: 2px solid #ff3d3d;
 }
 
+.input-quantity:disabled {
+  background: #f0f0f0;
+  opacity: 0.3;
+}
 
 .input-quantity {
   background: #f0f0f0;
